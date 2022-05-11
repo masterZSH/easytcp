@@ -3,15 +3,16 @@ package easytcp
 import (
 	"context"
 	"fmt"
-	"github.com/DarthPestilane/easytcp/internal/mock"
-	"github.com/DarthPestilane/easytcp/message"
-	"github.com/golang/mock/gomock"
-	"github.com/stretchr/testify/assert"
 	"io"
 	"net"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/DarthPestilane/easytcp/internal/mock"
+	"github.com/DarthPestilane/easytcp/message"
+	"github.com/golang/mock/gomock"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestNewTCPSession(t *testing.T) {

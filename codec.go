@@ -12,3 +12,6 @@ type Codec interface {
 	// Returns error when error occurred.
 	Decode(data []byte, v interface{}) error
 }
+
+// 定义编解码接口
+// 有json msgpack pb的实现

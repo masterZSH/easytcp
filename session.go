@@ -1,11 +1,13 @@
 package easytcp
 
 import (
-	"github.com/DarthPestilane/easytcp/message"
-	"github.com/google/uuid"
 	"net"
 	"sync"
 	"time"
+
+	"github.com/DarthPestilane/easytcp/message"
+
+	"github.com/google/uuid"
 )
 
 // Session represents a TCP session.

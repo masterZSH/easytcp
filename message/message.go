@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+// 消息结构定义
 // Entry is the unpacked message object.
 type Entry struct {
 	ID      interface{}
