@@ -53,7 +53,7 @@ func (d *DefaultPacker) bytesOrder() binary.ByteOrder {
 // Pack implements the Packer Pack method.
 // 构建包  长度为 8+数据长度
 // 前4位存储数据长度
-// 4-8存储id
+// 4-8位存储id
 func (d *DefaultPacker) Pack(entry *message.Entry) ([]byte, error) {
 	dataSize := len(entry.Data)
 	buffer := make([]byte, 4+4+dataSize)
